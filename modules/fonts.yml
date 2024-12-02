@@ -1,0 +1,9 @@
+type: fonts
+fonts:
+  nerd-fonts:
+    - FiraCode # don't add spaces or "Nerd Font" suffix.
+    - SourceCodePro
+    - JetBrainsMono
+  google-fonts:
+    - Roboto
+    - Open Sans

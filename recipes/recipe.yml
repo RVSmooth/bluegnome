@@ -10,6 +10,9 @@ image-version: 40 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - from-file: modules/fonts.yml
+  - from-file: modules/gnome-extensions.yml
+
   - type: files
     files:
       - source: system
@@ -27,6 +30,8 @@ modules:
        - fish 
        - zsh
        - neovim
+       - ddcutil
+
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
