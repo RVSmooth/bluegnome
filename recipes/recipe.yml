@@ -25,7 +25,7 @@ modules:
        - starship
        - android-tools
        - calibre
-       - alacritty
+       - kitty
        - fish 
        - zsh
        - neovim
