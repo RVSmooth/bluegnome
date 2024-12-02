@@ -43,7 +43,7 @@ modules:
         - org.localsend.localsend_app
         - org.qbittorrent.qBittorrent
         - com.obsproject.Studio
-        - com.rustdesk.Rustdesk
+        - com.rustdesk.RustDesk
         - com.github.neithern.g4music 
 
       remove:
