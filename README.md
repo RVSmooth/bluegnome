@@ -11,6 +11,10 @@ After setup, it is recommended you update this README to describe your custom im
 
 To rebase an existing atomic Fedora installation to the latest build:
 
+- First perform a ostree reset for a clean rebase. `It will remove current layered packages` (optional)
+  ```
+  rpm-ostree reset
+  ```
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
   rpm-ostree rebase ostree-unverified-registry:ghcr.io/rvsmooth/bluegnome:latest
