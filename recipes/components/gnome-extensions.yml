@@ -2,5 +2,4 @@ type: gnome-extensions
 install:
   - Compact Top Bar
   - Bluetooth Battery Meter
-  - Control monitor brightness and volume with ddcutil 
 
