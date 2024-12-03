@@ -1,0 +1,23 @@
+# image will be published to ghcr.io/<user>/<name>
+name: bluegnome
+# description will be included in the image's metadata
+description: gnome with personal cherry-picked stuffs
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/bluefin
+image-version: 40 # latest is also supported if you want new updates ASAP
+
+# module configuration, executed in order
+# you can include multiple instances of the same module
+modules:
+  - from-file: addons/fonts.yml
+  - from-file: addons/gnome-extensions.yml
+  - from-file: addons/flatpaks.yml
+  - from-file: addons/common-rpms.yml
+
+  - type: files
+    files:
+      - source: system
+        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
