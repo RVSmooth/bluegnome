@@ -33,7 +33,7 @@ modules:
         - org.gnome.Calendar
         - org.gnome.Loupe
         - org.gnome.NautilusPreviewer
-        - io.missioncenter.missioncenter
+        - io.missioncenter.MissionCenter
         - org.gnome.Weather 
         - org.gnome.font-viewer
         - org.gnome.clocks
