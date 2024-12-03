@@ -1,11 +1,11 @@
-  - type: rpm-ostree
-    install:
-       - qtile
-       - qtile-extras
-       - python3-psutil
-       - python3-dbus-next
-       - rofi
-       - feh
-       - xorg-x11-server-Xorg
-       - lxpolkit
+type: rpm-ostree
+install:
+  - qtile
+  - qtile-extras
+  - python3-psutil
+  - python3-dbus-next
+  - rofi
+  - feh
+  - xorg-x11-server-Xorg
+  - lxpolkit
 

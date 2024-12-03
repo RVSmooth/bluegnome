@@ -1,25 +1,25 @@
-  - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      install:
-        - org.onlyoffice.desktopeditors
-        - one.ablaze.floorp
-        - com.notesnook.Notesnook
-        - org.telegram.desktop
-        - org.localsend.localsend_app
-        - org.qbittorrent.qBittorrent
-        - com.obsproject.Studio
-        - com.rustdesk.RustDesk
-        - com.github.neithern.g4music 
+type: default-flatpaks
+notify: true # Send notification after install/uninstall is finished (true/false)
+system:
+  install:
+    - org.onlyoffice.desktopeditors
+    - one.ablaze.floorp
+    - com.notesnook.Notesnook
+    - org.telegram.desktop
+    - org.localsend.localsend_app
+    - org.qbittorrent.qBittorrent
+    - com.obsproject.Studio
+    - com.rustdesk.RustDesk
+    - com.github.neithern.g4music 
 
-      remove:
-        - org.mozilla.firefox
-        - org.gnome.DejaDup
-        - org.gnome.TextEditor
-        - org.gnome.baobab
-        - org.gnome.Connections
-        - org.gnome.World.PikaBackup
-        - org.fedoraproject.MediaWriter
-        - org.gnome.Contacts
-        - org.gnome.Papers
-        - org.gnome.Maps
+  remove:
+    - org.mozilla.firefox
+    - org.gnome.DejaDup
+    - org.gnome.TextEditor
+    - org.gnome.baobab
+    - org.gnome.Connections
+    - org.gnome.World.PikaBackup
+    - org.fedoraproject.MediaWriter
+    - org.gnome.Contacts
+    - org.gnome.Papers
+    - org.gnome.Maps
