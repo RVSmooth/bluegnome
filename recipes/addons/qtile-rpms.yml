@@ -8,4 +8,7 @@ install:
   - feh
   - xorg-x11-server-Xorg
   - lxpolkit
+  - NetworkManager-tui
+  - picom
+  - lxappearance
 
