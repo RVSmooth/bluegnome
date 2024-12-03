@@ -11,3 +11,5 @@ install:
   - neovim
   - ddcutil
   - newsboat
+  - usbutils
+  

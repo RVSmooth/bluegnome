@@ -19,8 +19,6 @@ modules:
 
   - type: files
     files:
-      - source: usr
-        destination: /usr 
       - source: systemd
         destination: /etc/systemd
       - source: etc
