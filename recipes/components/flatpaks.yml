@@ -3,7 +3,6 @@ notify: true
 system:
   install:
     - org.onlyoffice.desktopeditors
-    - one.ablaze.floorp
     - com.notesnook.Notesnook
     - org.telegram.desktop
     - org.localsend.localsend_app

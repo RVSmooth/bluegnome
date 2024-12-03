@@ -23,5 +23,21 @@ modules:
         destination: /etc/systemd
       - source: etc
         destination: /etc
+   
+  - type: default-flatpaks
+    notify: true
+    system:
+      remove:
+        - org.gnome.Calculator
+        - org.gnome.Characters
+        - org.gnome.Calendar
+        - org.gnome.Loupe.HEIC
+        - org.gnome.Loupe
+        - org.gnome.NautilusPreviewer
+        - io.missioncenter.missioncenter
+        - org.gnome.Weather 
+        - org.gnome.font-viewer
+        - org.gnome.clocks
+        - com.mattjakeman.ExtensionManager
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
