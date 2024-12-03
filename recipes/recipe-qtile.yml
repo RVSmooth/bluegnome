@@ -23,7 +23,7 @@ modules:
         destination: /usr 
       - source: systemd
         destination: /etc/systemd
-      - soruce: etc
+      - source: etc
         destination: /etc
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
