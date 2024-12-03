@@ -23,8 +23,7 @@ modules:
         destination: /usr 
       - source: systemd
         destination: /etc/systemd
-  - type: systemd
-    system:
-      enabled:
-        - sddm-boot.service
+      - soruce: etc
+        destination: /etc
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
