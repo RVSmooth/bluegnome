@@ -5,8 +5,3 @@ install:
   - qt5-qtgraphicaleffects
   - qt5-qtquickcontrols2
   - qt5-qtsvg
-
-type: systemd
-system:
-  enabled:
-    - sddm-boot.service

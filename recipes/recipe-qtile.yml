@@ -14,16 +14,17 @@ modules:
   - from-file: addons/fonts.yml
   - from-file: addons/common-rpms.yml
   - from-file: addons/qtile-rpms.yml
+  - from-file: addons/sddm.yml
+  - from-file: addons/flatpaks.yml
 
   - type: files
     files:
       - source: usr
-        destination: /usr # copies files/system/* /
+        destination: /usr 
       - source: systemd
         destination: /etc/systemd
-
-  - type: script
-    scripts:
-      - sddm.sh
-
+  - type: systemd
+    system:
+      enabled:
+        - sddm-boot.service
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
