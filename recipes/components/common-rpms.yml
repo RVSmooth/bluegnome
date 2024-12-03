@@ -16,3 +16,7 @@ install:
   - openssh-askpass
   - papirus-icon-theme
   - viewnior
+
+remove:
+  - firefox
+  - firefox-langpacks
