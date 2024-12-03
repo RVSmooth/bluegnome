@@ -10,9 +10,9 @@ image-version: 40 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - from-file: addons/fonts.yml
-  - from-file: addons/gnome-extensions.yml
-  - from-file: addons/flatpaks.yml
-  - from-file: addons/common-rpms.yml
+  - from-file: components/fonts.yml
+  - from-file: components/gnome-extensions.yml
+  - from-file: components/flatpaks.yml
+  - from-file: components/common-rpms.yml
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

@@ -11,11 +11,11 @@ image-version: 40 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - from-file: addons/fonts.yml
-  - from-file: addons/common-rpms.yml
-  - from-file: addons/qtile-rpms.yml
-  - from-file: addons/sddm.yml
-  - from-file: addons/flatpaks.yml
+  - from-file: components/fonts.yml
+  - from-file: components/common-rpms.yml
+  - from-file: components/qtile-rpms.yml
+  - from-file: components/sddm.yml
+  - from-file: components/flatpaks.yml
 
   - type: files
     files:
