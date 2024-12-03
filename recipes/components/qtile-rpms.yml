@@ -11,9 +11,9 @@ install:
   - NetworkManager-tui
   - picom
   - lxappearance
-  - fontawesome-fonts-all
   - dunst
   - redshift
   - flameshot
   - pcmanfm
-
+  - xclip
+  - cascadia-mono-nf-fonts

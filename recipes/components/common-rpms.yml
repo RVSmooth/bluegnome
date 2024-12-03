@@ -12,4 +12,6 @@ install:
   - ddcutil
   - newsboat
   - usbutils
-  
+  - python3-pip
+  - openssh-askpass
+  - papirus-icon-theme
