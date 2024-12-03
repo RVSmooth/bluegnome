@@ -7,4 +7,5 @@
        - rofi
        - feh
        - xorg-x11-server-Xorg
+       - lxpolkit
 
