@@ -15,4 +15,3 @@ install:
   - python3-pip
   - openssh-askpass
   - papirus-icon-theme
-  - viewnior

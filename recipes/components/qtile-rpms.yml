@@ -15,5 +15,9 @@ install:
   - redshift
   - flameshot
   - pcmanfm
+  - engrampa
   - xclip
   - cascadia-mono-nf-fonts
+  - viewnior
+  - fastfetch
+  
