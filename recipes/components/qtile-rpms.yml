@@ -20,4 +20,8 @@ install:
   - cascadia-mono-nf-fonts
   - viewnior
   - fastfetch
+  - gvfs
+  - gvfs-mtp
+  - libmtp
+
   
