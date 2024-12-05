@@ -443,7 +443,7 @@ wl_xcursor_size = 24
 
 @hook.subscribe.startup_once
 def autostart():
-    home = os.path.expanduser("~/.config/qtile/autostart.sh")
+    home = "/etc/xdg/qtile/autostart.sh"
     subprocess.Popen([home])
 
 
