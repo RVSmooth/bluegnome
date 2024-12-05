@@ -323,22 +323,6 @@ screens = [
                     ],
                 ),
                 widget.Spacer(length=6),
-                widget.Wlan(
-                    ethernet_interface="enp0s29u1u2",
-                    interface="wlp0s29u1u6",
-                    format="   {essid}",
-                    disconnected_message="",
-                    update_interval=6,
-                    **decoration_group,
-                    decorations=[
-                        BorderDecoration(
-                            colour=colors[9],
-                            border_width=[0, 0, 3, 0],
-                            padding_y=-1,
-                        )
-                    ],
-                ),
-                widget.Spacer(length=6),
                 widget.Volume(
                     fmt="󰕾  {}",
                     volume_app="wpctl",
