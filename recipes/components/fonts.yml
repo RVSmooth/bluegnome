@@ -1,8 +1,8 @@
 type: fonts
 fonts:
   nerd-fonts:
-    - FiraCode 
-    - SourceCodePro
     - JetBrainsMono
-  google-fonts:
-    - Roboto
+    - MesloLG
+    - Ubuntu
+    - RobotoMono
+    
