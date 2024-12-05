@@ -62,11 +62,14 @@ cosign verify --key cosign.pub ghcr.io/rvsmooth/bluegnome/template
 #+begin_src 
 git clone https://gitlab.com/dotsmooth/scripts.git
 bash scripts/base/dots.sh
-
 #+end_src
++ Note that if you install the dotfiles, you need to define a wallpaper path in ~/.config/qtile/autostart.sh in line 4
 ** Bluegnome
 + Bluegnome does not need any special post-installation setup.
 
 * Screenshots
 ** Bluetile
++ Before dotfiles installation
   [[./assets/qtile_1.png]]
++ After dotfiles installation
+  [[./assets/qtile_2.png]]
