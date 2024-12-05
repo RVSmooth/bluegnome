@@ -1,0 +1,72 @@
+#+title: AllBlue
+
+Images based on universal-blue's images, intended for experiment and personal use.
+Currently I build GNOME (bluegnome) based on ublue's bluefin and QTile (bluetile) based on ublue's main image.
+* Table of contents :toc:
+- [[#installation][Installation]]
+- [[#verification][Verification]]
+- [[#post-installation][Post Installation]]
+  - [[#bluetile][Bluetile]]
+  - [[#bluegnome][Bluegnome]]
+- [[#screenshots][Screenshots]]
+  - [[#bluetile-1][Bluetile]]
+
+* Installation
+
+  Warning: This is an experimental feature. Try at your own discretion.
+  You can rebase an existing atomic Fedora installation to the latest build by following these steps:
+
+  - First, rebase to the unsigned image to get the proper signing keys and policies installed:
+
+  #+BEGIN_SRC bash
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/rvsmooth/$IMAGE_NAME:latest
+  #+END_SRC
+
+  - Reboot to complete the rebase:
+  
+  #+BEGIN_SRC bash
+  systemctl reboot
+  #+END_SRC
+
+  - Then, rebase to the signed image:
+  
+  #+BEGIN_SRC bash
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/rvsmooth/$IMAGE_NAME:latest
+  #+END_SRC
+
+  - Reboot again to complete the installation:
+  
+  #+BEGIN_SRC bash
+  systemctl reboot
+  #+END_SRC
+
+The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+
++ note that $IMAGE_NAME should be replaced with the desired image. i.e., =bluetile= or =bluegnome=.
+
+* Verification
+
+These images are signed with [[https://www.sigstore.dev/]]'s [[https://github.com/sigstore/cosign]].
+
+You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
+
+#+BEGIN_SRC bash
+cosign verify --key cosign.pub ghcr.io/rvsmooth/bluegnome/template
+#+END_SRC
+
+* Post Installation
+** Bluetile
++ Bluetile is the qtile image based on ublue's main image.
++ While it can be used out of the box, some steps provided here can enhance the experience.
+*** Installing complete dotfiles
+#+begin_src 
+git clone https://gitlab.com/dotsmooth/scripts.git
+bash scripts/base/dots.sh
+
+#+end_src
+** Bluegnome
++ Bluegnome does not need any special post-installation setup.
+
+* Screenshots
+** Bluetile
+  [[./assets/qtile_1.png]]
