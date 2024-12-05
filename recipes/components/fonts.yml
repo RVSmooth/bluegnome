@@ -2,7 +2,7 @@ type: fonts
 fonts:
   nerd-fonts:
     - JetBrainsMono
-    - MesloLG
+    - Meslo
     - Ubuntu
     - RobotoMono
     
