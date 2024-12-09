@@ -15,3 +15,20 @@ install:
   - python3-pip
   - openssh-askpass
   - papirus-icon-theme
+  - qemu-char-spice
+	- qemu-device-display-virtio-gpu
+	- qemu-device-display-virtio-vga
+	- qemu-device-usb-redirect",
+	- qemu-img
+	- qemu-system-x86-core
+	- qemu-user-binfmt
+	- qemu-user-static
+	- qemu
+  - libvirt
+	- libvirt-nss
+  - virt-manager
+	- virt-viewer
+	- virt-v2v
+  - edk2-ovmf
+  - swtpm
+  
