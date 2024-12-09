@@ -11,7 +11,6 @@ image-version: 41 # latest is also supported if you want new updates ASAP
 # you can include multiple instances of the same module
 modules:
   - from-file: components/fonts.yml
-  - from-file: components/gnome-extensions.yml
   - from-file: components/flatpaks.yml
   - from-file: components/common-rpms.yml
 

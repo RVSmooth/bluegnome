@@ -1,7 +1,0 @@
-type: rpm-ostree
-remove:
-  - gnome-shell-extension-appindicator
-  - gnome-shell-extension-caffeine
-  - gnome-shell-extension-gsconnect
-  - gnome-shell-extension-logo-menu
-  - gnome-shell-extension-search-light
