@@ -1,5 +1,5 @@
 type: rpm-ostree
-uninstall:
+remove:
   - gnome-shell-extension-appindicator
   - gnome-shell-extension-caffeine
   - gnome-shell-extension-gsconnect
